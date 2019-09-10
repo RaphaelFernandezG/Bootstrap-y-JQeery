@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="cargar.js"></script>
+
+</head>
+<body>
+	<form class="contact_form" action="#" id="contact_form" runat="server">
+		<div>
+			<ul>
+				<li>
+					<h2>Contactos</h2>
+					<span class="required_notification">* Datos requeridos</span>
+				</li>
+				<li>
+					<label for="name">Nombre:</label>
+					<input type="text" placeholder="Raphael Fernandez" required />
+				</li>
+				<li>
+					<label for="email">Email:</label>
+					<input type="email" name="email" placeholder="nombre@algomail.com" required />
+					<span class="form_hint">Formato correcto: "nombre@algo.com"</span>
+				</li>
+				<li>
+					<label for="website">Sitio web:</label>
+					<input type="url" name="website" placeholder="http://tudominio.com" required pattern="(http|https)://.+" />
+					<span class="form_hint">Formato correcto: "http://algo.com"</span>
+				</li>
+				<li>
+					<label for="message">Mensaje:</label>
+					<textarea name="message" cols="40" rows="6" required></textarea>
+				</li>
+				<li>
+					<button class="submit" type="submit">Enviar mensaje</button>
+				</li>
+			</ul>
+		</div>
+	</form>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
